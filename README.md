@@ -23,15 +23,22 @@ Se desarrolló un parser en Bison usando la misma gramática. La cadena se ingre
 
 ### Resultados y comparación
 
-A continuación, se presenta la gráfica de comparación entre los tiempos de ejecución de CYK (Python) y Bison (C):
+Python (rojo): curva de crecimiento rápida (como O(n³))
 
-![image](https://github.com/user-attachments/assets/45cfb1e4-48bf-43e6-acfb-03a3100b05d0)
+Bison (verde): curva más plana, eficiente y manejable
 
-- Eje X: Tamaño de la cadena
+Esto prueba que Bison es más óptimo para análisis sintáctico usando este tipo de algoritmos.
 
-- Eje Y: Tiempo de ejecución (segundos)
+![image](https://github.com/user-attachments/assets/54f86f02-9a5f-44f6-b32b-ed0ee36c8891)
 
-Como se puede observar, el algoritmo CYK en Python tiene un crecimiento cúbico en tiempo, mientras que Bison mantiene un comportamiento mucho más eficiente, incluso con cadenas largas.
+
+- Cada punto en la gráfica representa el tiempo estimado que tomaría analizar una cadena de longitud X usando el algoritmo CYK.
+
+- Los tiempos en Python aumentan rápidamente porque el algoritmo analiza muchas combinaciones.
+
+- Los tiempos en Bison aumentan mucho más lentamente, porque su implementación en C es compilada y optimizada.
+
+
 
 ### Conclusiones
 
