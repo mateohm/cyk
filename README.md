@@ -23,7 +23,7 @@ Se desarrolló un parser en Bison usando la misma gramática. La cadena se ingre
 
 ### Resultados y comparación
 
-Python (rojo): curva de crecimiento rápida (como O(n³))
+Python (rojo): curva de crecimiento rápida 
 
 Bison (verde): curva más plana, eficiente y manejable
 
